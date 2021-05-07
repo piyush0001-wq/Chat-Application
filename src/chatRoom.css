@@ -1,0 +1,378 @@
+.chatroom_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #40444b;
+}
+
+.left {
+  position: relative;
+  min-width: 350px;
+  background: #181818;
+  height: 85vh;
+}
+
+.left .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 10px;
+  border-radius: 20px;
+  background: rgba(179, 179, 179, 0.233);
+}
+
+.left .card .set_status {
+  position: absolute;
+  top: -5px;
+  left: 60px;
+  font-size: 14px;
+  font-weight: bold;
+  background: rgba(156, 156, 156, 0.575);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.left .card img {
+  border-radius: 50%;
+  padding: 5px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 30px;
+  margin: 10px;
+}
+
+.left .card .status_online {
+  border: 1px solid #19eb19;
+}
+
+.left .card .status_offline {
+  border: 1px solid #cc0000;
+}
+
+.left .card .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left .card .content h3 {
+  color: white;
+  font-weight: normal;
+}
+
+.left .card .content i {
+  color: grey;
+}
+
+.left .card .content i:hover {
+  cursor: pointer;
+}
+
+.left .recording a {
+  color: #00dfd3;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 30px 0px;
+  padding: 0;
+}
+
+.left .recording .buttons {
+  border-radius: 20px;
+  padding: 5px;
+  margin: 20px 10px;
+  background: rgba(179, 179, 179, 0.233);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.left .recording .buttons p {
+  cursor: pointer;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.right {
+  max-width: 350px;
+  background: url("./images/back4.png");
+  height: 85vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.right h3 {
+  color: #adadad;
+  padding: 0 10px;
+}
+
+.right .content {
+  text-align: center;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 10px;
+  background: rgba(179, 179, 179, 0.233);
+}
+
+.right .content h2 {
+  color: white;
+  font-size: 18px;
+}
+
+.right .content p {
+  color: white;
+  font-size: 14px;
+}
+
+.messagess {
+  background: #40444b;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 10px;
+  height: 80vh;
+  width: 70%;
+  overflow-y: auto;
+}
+
+.messagess img {
+  height: 40px;
+  width: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
+}
+
+.messagess .texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.messagess .texts .likes {
+  color: white;
+  background: black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  margin-top: -25px;
+  z-index: 1;
+}
+
+.messagess .loggedUSerMessage {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.messagess .loggedUSerMessage .usertext {
+  background: -webkit-gradient(linear, right top, left top, from(#7575d8), to(#02afaf));
+  background: linear-gradient(to left, #7575d8, #02afaf);
+  color: white;
+  border-radius: 15px;
+  padding: 10px;
+  font-weight: 600;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 17px;
+}
+
+.messagess .loggedUSerMessage .texts {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.messagess .loggedUSerMessage .username {
+  display: none;
+}
+
+.messagess .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 12px 0;
+}
+
+.messagess .message .nameandtext {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.messagess .message .nameandtext .username {
+  line-height: 0;
+}
+
+.messagess .message .texts {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.messagess .message .texts .likes {
+  margin-top: -25px;
+  z-index: 1;
+}
+
+.messagess .message .usertext {
+  background: -webkit-gradient(linear, left top, right top, from(#7575d8), to(#02afaf));
+  background: linear-gradient(to right, #7575d8, #02afaf);
+  color: white;
+  border-radius: 15px;
+  padding: 10px;
+  font-weight: 600;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 17px;
+}
+
+.messagess .message .username {
+  color: white;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.messagess .msg_form {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 8px;
+  z-index: 1111;
+}
+
+.messagess .msg_form input {
+  border: none;
+  background: #181717;
+  color: white;
+  outline: none;
+  padding: 10px;
+  width: 34%;
+  margin: 0;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.205);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.205);
+  font-size: 18px;
+}
+
+.messagess .msg_form button {
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.205);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.205);
+  padding: 10px 60px;
+  font-size: 18px;
+  color: white;
+  background: #104953;
+  cursor: pointer;
+}
+
+.messagess .msg_form .audio-react-recorder {
+  height: 0;
+  width: 0;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(187, 187, 187, 0.644);
+}
+
+:-ms-input-placeholder {
+  color: rgba(187, 187, 187, 0.644);
+}
+
+::-ms-input-placeholder {
+  color: rgba(187, 187, 187, 0.644);
+}
+
+::placeholder {
+  color: rgba(187, 187, 187, 0.644);
+}
+
+@media (max-width: 780px) {
+  .messagess {
+    border: none;
+    width: 100%;
+    border-radius: 40px 40px 0 0;
+    padding: 0;
+  }
+  .left,
+  .right {
+    display: none;
+  }
+  .msg_form {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .msg_form input {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+/*# sourceMappingURL=chatRoom.css.map */
